@@ -1,0 +1,16 @@
+.pagination.pagination-list LI A{
+    border-color: #FFFFFF !important;
+}
+
+#accordionSidebar a.nav-link {
+    padding-top: 0.5rem !important;
+    padding-bottom: 0.5rem !important;
+}
+
+.sidebar{
+    transition: all 0.3s ease-in-out !important;
+}
+
+.sidebar.toggled{
+    transition: all 0.3s ease-in-out !important;
+}
