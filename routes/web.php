@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\TaskController; // Import the TaskController (optional in this case, but good practice)
 
 /*
 |--------------------------------------------------------------------------
@@ -86,5 +87,13 @@ Route::prefix('admin/sales')->name('admin.sales.')->group(function () {
         Route::get('/quotation/view', function () {
             return view('admin.sales.modules.quotation.view');
         })->name('quotation.view');
+
+        Route::get('/task/create', function () {
+            return view('admin.sales.modules.task.create');
+        })->name('task.create');
+
+        Route::get('/task/view', function () {
+            return view('admin.sales.modules.task.view');
+        })->name('task.view');
     });
 });
