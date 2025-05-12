@@ -115,7 +115,7 @@
                     </div>
                 </div>
                 <div class="card-body">
-                    <div class="chart-area">
+                    <div class="chart-area" style="height: 400px;">
                         <canvas id="salesAreaChart"></canvas>
                     </div>
                 </div>
@@ -123,7 +123,7 @@
         </div>
 
         <div class="col-xl-4 col-lg-5">
-            <div class="card shadow mb-4">
+            <div class="card shadow mb-4" style="height: 485px;">
                 <div
                     class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
                     <h6 class="m-0 font-weight-bold text-primary">Sales Breakdown by Product</h6>
@@ -143,7 +143,7 @@
                 </div>
                 <div class="card-body">
                     <div class="chart-pie pt-4 pb-2">
-                        <canvas id="salesPieChart"></canvas>
+                        <canvas id="salesPieChart" style="height: 300px"></canvas>
                     </div>
                     <div class="mt-4 text-center small">
                         <span class="mr-2">
@@ -257,7 +257,8 @@
                         }],
                     },
                     options: {
-                        // Chart options here (e.g., scales, tooltips)
+                        width: 800,
+                        height: 320,
                     }
                 });
             }
@@ -277,7 +278,8 @@
                         }],
                     },
                     options: {
-                        // Chart options here (e.g., legend, tooltips)
+                        width: 800,
+                        height: 320,
                     },
                 });
             }
